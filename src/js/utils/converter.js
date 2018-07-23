@@ -92,7 +92,7 @@ export function caculateEthBalance(token){
   }
 }
 
-export function shortEthBalance(tokens){
+export function sortEthBalance(tokens){
   var shortedTokens = []
   let removedEth = {...tokens}
   delete removedEth[constants.ETH.symbol]
@@ -109,20 +109,24 @@ export function shortEthBalance(tokens){
   return shortedTokens
 }
 
-export function shortASCEthBalance(tokens){
+export function sortASCEthBalance(tokens){
   var shortedTokens = []
   let removedEth = {...tokens}
   delete removedEth[constants.ETH.symbol]
+  console.log("sort asc: ", removedEth)
   if(tokens){
     shortedTokens = Object.values(removedEth).sort((a, b) => {
-      var balanceEthA = new BigNumber(caculateEthBalance(a)) 
+      var balanceEthA = new BigNumber(caculateEthBalance(a))
+      console.log("balanceEthA: ", balanceEthA)
       var balanceEthB = new BigNumber(caculateEthBalance(b)) 
+      console.log("balanceEthB: ", balanceEthB)
       return balanceEthA.minus(balanceEthB)
     })
   } 
   if(tokens[constants.ETH.symbol]){
     shortedTokens.unshift(tokens[constants.ETH.symbol])
   }
+  console.log("sorted tokens: ", shortedTokens)
   return shortedTokens
 }
 

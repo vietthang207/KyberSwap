@@ -341,7 +341,8 @@
         "decimal": 18,
         "address": "0x442bc47357919446eabc18c7211e57a13d983469",
         "symbol":"CHAT", 
-        "icon": "chat.svg"
+        "icon": "chat.svg",
+        "isNew": true
       },
       "DTA": {
         "name": "Data",
@@ -362,14 +363,16 @@
         "decimal": 18,
         "address": "0x8dd5fbce2f6a956c3022ba3663759011dd51e73e",
         "symbol":"TUSD", 
-        "icon": "tusd.svg"
+        "icon": "tusd.svg",
+        "isNew": true
       },
       "TOMO": {
         "name": "Tomocoin",
         "decimal": 18,
         "address": "0x8b353021189375591723e7384262f45709a3c3dc",
         "symbol":"TOMO", 
-        "icon": "tomo.svg"
+        "icon": "tomo.svg",
+        "isNew": true
       },
       "MDS": {
         "name": "MediShares",

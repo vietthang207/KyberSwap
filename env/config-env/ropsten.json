@@ -140,7 +140,8 @@
         "symbol": "BQX",
         "decimal": 8,
         "icon": "bqx.svg",
-        "usd_id":"ethos"
+        "usd_id":"ethos",
+        "isNew": true
       },
       "ADX": {
         "name": "AdEx",
@@ -156,7 +157,8 @@
         "symbol": "AST",
         "decimal": 4,
         "icon": "ast.svg",
-        "usd_id": "airswap"
+        "usd_id": "airswap",
+        "isNew": true
       },
       "RCN": {
         "name": "Ripio Credit Network",
@@ -188,7 +190,8 @@
         "symbol": "LINK",
         "decimal": 18,
         "icon": "link.svg",
-        "usd_id":"chainlink"
+        "usd_id":"chainlink",
+        "isNew": true
       },
       "IOST": {
         "name": "IOStoken",
