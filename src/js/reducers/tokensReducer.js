@@ -8,17 +8,6 @@ import * as converter from "../utils/converter"
 const initState = function () {
   let tokens = {}
   Object.keys(BLOCKCHAIN_INFO.tokens).forEach((key) => {
-    if (!BLOCKCHAIN_INFO.tokens[key].isNew && key !== 'ETH') return
-    tokens[key] = BLOCKCHAIN_INFO.tokens[key]
-    tokens[key].rate = 0
-    tokens[key].minRate = 0
-    tokens[key].rateEth = 0
-    tokens[key].minRateEth = 0
-    tokens[key].balance = 0
-    tokens[key].rateUSD = 0
-  })
-  Object.keys(BLOCKCHAIN_INFO.tokens).forEach((key) => {
-    if (BLOCKCHAIN_INFO.tokens[key].isNew || key === 'ETH') return
     tokens[key] = BLOCKCHAIN_INFO.tokens[key]
     tokens[key].rate = 0
     tokens[key].minRate = 0

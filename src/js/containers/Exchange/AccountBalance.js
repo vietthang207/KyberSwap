@@ -12,7 +12,6 @@ import { getTranslate } from 'react-localize-redux';
   var location = store.router.location.pathname
   var sourceActive = 'ETH'
   sourceActive = store.exchange.sourceTokenSymbol
-  console.log("props.chooseToken: ", props.chooseToken)
   return {
     tokens: store.tokens.tokens,
     translate: getTranslate(store.locale),

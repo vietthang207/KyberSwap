@@ -17,13 +17,11 @@ const AccountBalanceLayout = (props) => {
   }
 
   function reorderToken(tokens){
-      console.log("token balance: ", tokens)
       if (props.sortType === "Price"){
-        console.log("sort value: ", props.sortValue)
         if (props.sortValue){
           return converts.sortEthBalance(tokens)
         }else{
-          return converts.sortASCEthBalance(tokens)
+          return converts.shortASCEthBalance(tokens)
         }
       }else{
         if (props.sortValue){
