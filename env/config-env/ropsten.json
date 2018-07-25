@@ -225,7 +225,7 @@
         "decimal": 18,
         "symbol" : "BITX",
         "address": "0x7a17267576318efb728bc4a0833e489a46ba138f",
-        "icon": "bitx.png",
+        "icon": "bitx.svg",
         "isNew": true
       }
   },
