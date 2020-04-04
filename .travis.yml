@@ -13,8 +13,13 @@ script:
   - echo "npm test temporarily disabled"
 
 install:
+  - sudo apt-get update
+  - sudo apt-get install build-essential
   - npm install
-  - bash .travis/build_swap.sh
+  - CI=false bash .travis/build_swap.sh
+  - ls public
+  - ls public/ropsten
+  - ls public/dev
 
 deploy:
   - provider: s3
